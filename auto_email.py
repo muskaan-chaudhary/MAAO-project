@@ -36,7 +36,7 @@ smtp.starttls()
 sender_name = "No Reply"
 sender_email = "no_reply@gmail.com"
 # Login with your email and password
-smtp.login('muskaantestmail@gmail.com', 'lxuq sjiv ryau nnsf')
+smtp.login('your_email@gmail.com', 'your_password')
 
 # Initializing datetime module
 today = str(date.today())
@@ -79,7 +79,7 @@ def message(subject="Python Notification"+'',
 # Automating the process
 def auto(file_paths):
 	msg = message("MAAO 0.7-m Robotic Observation Log " + today , " [TEST] \n This Email is sent automatically. \n Please find the attachments below. ", file_paths)
-	to = ["chaudharymuskan19@gmail.com", "chaudharymuskaan19@gmail.com", "lim9gu@gmail.com"
+	to = ["email1@gmail.com", "email2@gmail.com", "email3.com"
 	   ]
 	
     
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     # Specify the directory to monitor
 	try:
 		while True:
-			directory_to_watch = "/home/muskaan/Documents/test"
+			directory_to_watch = "/file/path/here"
 
 			# Create an observer and link it to the event handler
 			observer = Observer()
